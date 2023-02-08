@@ -12,7 +12,7 @@ setup(
     description=redpic.__doc__,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/binp-dev/redpic',
+    url="https://github.com/binp-dev/redpic",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
