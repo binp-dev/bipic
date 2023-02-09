@@ -1,6 +1,6 @@
 from scipy.constants import neutron_mass
 
-from redpic.particles.base import BaseParticle
+from redpic.beam.particles.base import BaseParticle
 
 
 class Neutron(BaseParticle):

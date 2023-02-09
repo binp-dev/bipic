@@ -1,4 +1,4 @@
-from redpic.particles.base import BaseParticle
+from redpic.beam.particles.base import BaseParticle
 
 
 class CustomParticle(BaseParticle):

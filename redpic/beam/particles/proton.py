@@ -1,6 +1,6 @@
 from scipy.constants import elementary_charge, proton_mass
 
-from redpic.particles.base import BaseParticle
+from redpic.beam.particles.base import BaseParticle
 
 
 class Proton(BaseParticle):

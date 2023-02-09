@@ -1,6 +1,6 @@
 from scipy.constants import electron_mass, elementary_charge
 
-from redpic.particles.base import BaseParticle
+from redpic.beam.particles.base import BaseParticle
 
 
 class Positron(BaseParticle):
