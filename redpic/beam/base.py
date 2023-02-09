@@ -80,4 +80,4 @@ class BaseBeam(ABC):
     @abstractmethod
     def generate(self):
         """Generate the beam."""
-        pass
+        return self.particles
