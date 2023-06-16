@@ -1,4 +1,4 @@
-# REDPIC
+# BIPIC
 
 This PIC code has been developed since 2022 at the Budker Institute of Nuclear Physics as an alternative to 
 [ASTRA](https://www.desy.de/~mpyflo/), 
@@ -20,6 +20,11 @@ For particle dynamics simulation using finite difference scheme relativistic.
     -   [IDE](#ide)
 -   [Authors](#authors)
 -   [Licence](#license)
+-   [Contributing](#contributing)
+    -   [Dependencies](#dependencies)
+    -   [Formatting](#formatting)
+    -   [Tests](#tests)
+    -   [Maintaining](#maintaining)
 
 ## Getting Started
 
@@ -28,11 +33,11 @@ For particle dynamics simulation using finite difference scheme relativistic.
 The documentation contains all the Latex files needed to generate documentation. 
 The main source files are located in the `documentation/src`.
 
-* [main.tex](/documentation/src/main.tex) is documentation source file. 
-The final PDF can be found [here](/documentation/out/main.pdf).
+* [main.tex](/docs/src/main.tex) is documentation source file. 
+The final PDF can be found [here](/docs/out/main.pdf).
 
-[main.tex](/documentation/src/main.tex) is the source file that Latex compiler will use to generate the paper. 
-However, in order to keep the code cleaner, the main sections of the paper are all located in the [sections](/documentation/src/sections). 
+[main.tex](/docs/src/main.tex) is the source file that Latex compiler will use to generate the paper. 
+However, in order to keep the code cleaner, the main sections of the paper are all located in the [sections](/docs/src/sections). 
 In this way you will experience less merging issues when two or more people are working on the same doc.
 
 Just edit the text in the relative Latex file (e.g., introduction, methodology, etc.) and you should be ready to go. 
@@ -40,8 +45,8 @@ No need to change any other file.
 
 #### Adding a new section
 
-Just copy a section file (e.g., [introduction.tex](/documentation/src/sections/introduction.tex)) paste it in the same directory. 
-Rename the pasted file (e.g. first_chapter.tex) and add this file to [main.tex](/documentation/src/main.tex).
+Just copy a section file (e.g., [introduction.tex](/docs/src/sections/introduction.tex)) paste it in the same directory. 
+Rename the pasted file (e.g. first_chapter.tex) and add this file to [main.tex](/docs/src/main.tex).
 
 ### Additional Resources
 
@@ -86,3 +91,21 @@ See also the list of [contributors](https://github.com/binp-dev/redpic/contribut
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Contributing
+
+### Dependencies
+Use `make deps` command to install library, its production and development dependencies.
+
+### Formatting
+Use `make format` to autoformat code with black tool. 
+
+### Tests
+- `make lint` to run only linters for current python version
+
+### Maintaining
+If pull request consists of several meaningful commits, that should be preserved, 
+then use "Rebase and merge" option. Otherwise use "Squash and merge". 
+
+New release (changelog, tag and pypi upload) will be automatically created 
+on each push to master via Github Actions workflow.
