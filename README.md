@@ -83,8 +83,8 @@ You should install [git](https://git-scm.com) on your computer. And have [GitHub
 
 ## Authors
 
-* **[Danila Nikiforov](https://github.com/Danila-Nikiforov)** - *Initial work*
 * **[Vyacheslav Fedorov](https://github.com/fuodorov)** - *Initial work*
+* **[Danila Nikiforov](https://github.com/Danila-Nikiforov)** - *Initial work*
 
 See also the list of [contributors](https://github.com/binp-dev/redpic/contributors) who participated in this project.
 
@@ -101,7 +101,7 @@ Use `make deps` command to install library, its production and development depen
 Use `make format` to autoformat code with black tool. 
 
 ### Tests
-- `make lint` to run only linters for current python version
+Use `make lint` to run only linters for current python version
 
 ### Maintaining
 If pull request consists of several meaningful commits, that should be preserved, 
